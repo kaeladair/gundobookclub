@@ -1,0 +1,73 @@
+/* src/global.css */
+
+@font-face {
+    font-family: 'AnaktoriaRegular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://fontlibrary.org/assets/fonts/anaktoria-textfonts/ttf/7ab9f5a63a9fbe95ef12d2f5673a8e94.ttf') format('truetype');
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./assets/athens.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: darken;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  .fullscreen-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .book-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+  }
+  
+  .book {
+    margin: 15px;
+    text-align: center;
+    color: white;
+  }
+  
+  .book img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-title {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .book img {
+      width: 120px;
+      height: 160px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .book img {
+      width: 100px;
+      height: 140px;
+    }
+  }
+  
+  
